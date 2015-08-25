@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/profile_iv"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="false"
+        android:src="@drawable/profile_abathur"
+        android:maxWidth="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/name_tv"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/profile_iv"
+        android:layout_toEndOf="@+id/profile_iv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/win_per_tv"
+        android:id="@+id/winper"
+        android:layout_below="@+id/name_tv"
+        android:layout_toRightOf="@+id/profile_iv"
+        android:layout_toEndOf="@+id/profile_iv"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/delta_per"
+        android:id="@+id/changeper"
+        android:layout_alignTop="@+id/winper"
+        android:layout_toRightOf="@+id/winper"
+        android:layout_toEndOf="@+id/winper"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/pop_tv"
+        android:id="@+id/pop"
+        android:layout_alignTop="@+id/changeper"
+        android:layout_toRightOf="@+id/changeper"
+        android:layout_toEndOf="@+id/changeper"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="90.0%"
+        android:id="@+id/winperdata"
+        android:layout_alignLeft="@+id/winper"
+        android:layout_below="@+id/winper"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="90.0%"
+        android:id="@+id/changeperdata"
+        android:layout_below="@+id/changeper"
+        android:layout_alignLeft="@+id/changeper"
+        android:layout_alignStart="@+id/changeper"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="90.0%"
+        android:id="@+id/popdata"
+        android:layout_below="@+id/pop"
+        android:layout_alignLeft="@+id/pop"
+        android:layout_alignStart="@+id/pop"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+</RelativeLayout>
